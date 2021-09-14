@@ -1,0 +1,215 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0px;
+        }
+         nav {
+        display: flex;
+        background-color: black;
+        height: 70px;
+        justify-content: space-between;
+      }
+      h1 {
+        margin: 0px;
+        color: white;
+        font-size: 30px;
+      }
+      a {
+        color: white;
+        margin-right: 30px;
+        text-decoration: none;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: center;
+      }
+      .menu {
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+        form {
+              background-color: coral;
+              padding: 30px;
+              text-align: center;
+              color: white;
+              width: 400px;
+          }
+          label {
+              color: white;
+          }
+          body {
+              margin-bottom: 1000px;
+          }
+    </style>
+   
+    <title>Login page</title>
+</head>
+<body>
+       <div>
+        <nav>
+            <section class="brand">
+              <h1>Edyst</h1>
+            </section>
+            <section class="menu">
+              <a href="flex.html">Home</a>
+              <a  href="Portfolio.html">Porfolio</a>
+              <a href="Login.html">login</a>
+              <a href="#">Grid</a>
+            </section>
+          </nav>
+           <h2>Login Form</h2>
+           <form  >
+           <table>
+
+               <tr>
+                   <td>
+                       <label>Username:</label>
+                   </td>
+
+                   <td>
+                       <input type="text" placeholder="Enter Name" size="20" />
+                    </td>
+               </tr>
+
+
+               <tr></tr>
+               <tr></tr>
+               <tr></tr>
+
+               <tr>
+                <td>
+                    <label>Password:</label>
+                </td>
+                <td>
+                    <input type="password" placeholder="password" />
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="reset" />
+                    <input type="submit" value="Login" disabled />
+                </td>
+              
+                   
+            
+            </tr>
+
+           </table>
+           </form>
+       </div>
+
+        <div>
+            <h2>Email element</h2>
+            <form>
+            <label>Enter Email: </label>
+            <input type="email" />
+            <input type="submit"  />
+            </form>
+        </div>
+        <div>
+            <h2>Date element</h2>
+            <form>
+            <label>Select Date: </label>
+            <input type="date" />
+            <input type="submit"  />
+            </form>
+        </div>
+        <div>
+            <h2>Time element</h2>
+            <form>
+            <label>Select Time: </label>
+            <input type="time" />
+            <input type="submit"  />
+            </form>
+        </div>
+        <div>
+            <h2>Color element</h2>
+            <form>
+            <label>Select Color: </label>
+            <input type="color" />
+            <input type="submit"  />
+            </form>
+        </div>
+        <div>
+            <h2>Radio element</h2>
+            <form>
+           
+            <input type="radio" value="male" name="gender" />
+            <label>MALE</label>
+           
+            <input type="radio"  value="Female" name="gender" />
+            <label>FEMALE</label>
+            <input type="radio"  value="other" name="gender" />
+            <label>Others</label>
+            </form>
+        </div>
+        <div>
+            <h2>Checkbox element</h2>
+            <form>
+           
+            <input type="checkbox" value="html" name="html" />
+            <label>HTML</label>
+           
+            <input type="checkbox"  value="react" name="react" />
+            <label>React</label>
+            <input type="checkbox"  value="angular" name="angular" />
+            <label>Angular</label>
+            </form>
+        </div>
+        <div>
+            <h2>Drop Down</h2>
+            <form>
+                <label>Select Technologies</label>
+                <select>
+                    <option>Select</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+                    <option>BS</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <h2>Drop Down</h2>
+            <form>
+                <label>Select Technologies</label>
+                <select>
+                   <optgroup label="Front end Technologies">
+                       <option>JS</option>
+                       <option>React</option>
+                       <option>Angular</option>
+                       <option>Viu js</option>
+                   </optgroup>
+                   <optgroup label="Backedn end Technologies">
+                    <option>Spring</option>
+                    <option>Nodejs</option>
+                    <option>Django</option>
+                    <option>Asp.net</option>
+                </optgroup>
+                </select>
+            </form>
+        </div>
+
+        <div>
+            <h2>Textarea</h2>
+            <form>
+                <label>Enter Address</label>
+                <textarea rows="5" cols="40"></textarea>
+            </form>
+        </div>
+        <div>
+            <h2>Number</h2>
+            <form>
+                <label>Enter Number</label>
+              <input type="number" />
+            </form>
+        </div>
+</body>
+</html>
