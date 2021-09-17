@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Example</title>
+        <style>
+            * {
+                margin: 0px;
+                padding:0px;
+                box-sizing: border-box;
+            }
+             /* Header Section  */
+            header {
+                background-color: black;
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+            }
+            h1 {
+                color: white;
+                font-size: 40px;
+                font-family:cursive
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                margin-right: 30px;
+                font-family:cursive
+            }
+            #brand {
+                width: 40%;
+             
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #nav {
+               
+                display: flex;
+                width: 60%;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            a:hover {
+                background-color: coral;
+                padding: 5px 20px;
+                border-radius: 20px;
+
+            }
+            /* Main Section  */
+
+             main {
+                 background: url("https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+                 height: 100vh;
+                }
+                #content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    height: 100vh;
+                    background: rgba(0,0,0,0.7);
+                }
+                button {
+                    background: coral;
+                    color: white;
+                    padding: 10px 20px;
+                    border:none;
+                    margin:20px;
+                    box-shadow:  0 0 10px white;
+                }
+                p {
+                    margin:10px
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <section id="brand">
+                <h1>Edyst</h1>
+            </section>
+            <section id="nav">
+                  <a href="#">Home</a>
+                  <a href="./Porfolio/Portfolio.html">Portfolio</a>
+                  <a href="#">Grid</a>
+                  <a href="Login.html">Login</a>
+                  <a href="#">Register</a>
+            </section>
+        </header>
+
+        <main>
+          <section id="content">
+              <h2>Welcome to Flex Concept</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste impedit adipisci porro beatae eveniet ipsam. Quod autem quae quam ad repellat hic, fugiat odio facilis sed atque! Sunt nulla totam eligendi aliquam officiis? Architecto porro, cupiditate consequatur sequi quo quos tenetur harum aut quis consectetur veniam aperiam incidunt, eum delectus!</p>
+              <button>Explore More!!!</button>
+            </section>
+
+        </main>
+    </body>
+</html>

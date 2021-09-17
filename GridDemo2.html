@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+   
+    <title>Grid</title>
+     <style>
+         .container {
+          
+             padding: 20px;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 70px 150px 70px ;
+              grid-gap: 10px;
+              /* grid-column-gap: 10px; */
+              /* grid-row-gap: 10px; */
+              
+         }
+         div {
+             text-align: center;
+             color: white;
+             padding:10px
+         }
+         #d1 {
+             background-color: brown;
+         }
+         #d2 {
+             background-color: coral;
+         }
+         #d3 {
+             background-color: darkblue;
+         }
+         #d4 {
+             background-color: darkgoldenrod;
+         }
+     </style>
+</head>
+<body>
+      <div class="container">
+       <div id="d1">Div 1</div>
+       <div id="d2">Div 2</div>
+       <div id="d3">Div 3</div>
+       <div id="d4">Div 4</div>
+       <div id="d1">Div 3</div>
+       <div id="d2">Div 4</div>
+
+
+
+
+      </div>
+</body>
+</html>
