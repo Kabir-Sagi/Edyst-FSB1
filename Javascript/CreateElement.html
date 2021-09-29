@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        function fnCreateh2() {
+           var h2Ref = document.createElement('h2')
+            h2Ref.append("Welcome to DOM Manipulation")
+            document.querySelector('body').appendChild(h2Ref)
+            // document.getElementById('b1').setAttribute('disabled',true)
+            document.querySelector('#b1').setAttribute('disabled',true)
+
+
+        }
+          function fnShow() {
+            document.querySelector('h2').style.display = 'block'
+          }
+            function fnHide() {
+                document.querySelector('h2').style.display = 'none'
+
+                // document.querySelector('h2').style.visibility = "hide"
+            }
+              function fnEnable() {
+                  document.querySelector('#b1').removeAttribute('disabled')
+              }
+    </script>
+</head>
+<body>
+         
+
+          <div>
+              <button onclick="fnCreateh2()" id="b1"  >Create New Element</button>
+              <button onclick="fnShow()">Show</button>
+              <button onclick="fnHide()">Hide</button>
+              <button onclick="fnEnable()">Enable</button>
+          </div>
+           
+</body>
+</html>

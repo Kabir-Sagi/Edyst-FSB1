@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        function fnInput() {
+      var inputRef= document.getElementById('i');
+      var pRef= document.getElementById('p1')
+
+     var inputVal = inputRef.value
+     pRef.innerText =inputVal
+        
+        }
+    </script>
+</head>
+<body>
+      <div style="text-align: center;margin-top: 100px;">
+        <h2>Text Elment</h2>
+          NAME:<input type="text" id="i" />
+          <button onclick="fnInput()">Display Text</button>
+          <p id="p1"> </p>
+      </div>
+</body>
+</html>

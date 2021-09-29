@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+   
+    <title>Async Await</title>
+    <style>
+        div {
+            text-align:center;
+            margin-top: 100px;
+        }
+      </style>
+      <script>
+         async function fnGetDataFromServer() { 
+             var res = await fetch("https://jsonplaceholder.typicode.com/posts")
+              var data =   await   res.json()
+              console.log(data)
+               data.map(function(e){
+                   var ol =  document.createElement('ol')
+                    var li1=  document.createElement('li')
+                    var li2=  document.createElement('li')
+                     li1.append(e.id)
+                     li2.append(e.title)
+
+                     ol.appendChild(li1)
+                     ol.appendChild(li2)
+                     document.querySelector('body').appendChild(ol)
+               })
+          }
+      </script>
+</head>
+<body>
+    <div id="d">
+        <h2>Async Await Example</h2>
+        <button onclick="fnGetDataFromServer()">Send Request to Server</button>
+    </div>
+</body>
+</html> 

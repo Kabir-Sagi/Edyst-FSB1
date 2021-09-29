@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+      div {
+          text-align:center;
+          margin-top: 100px;
+      }
+    </style>
+    <script>
+        function fnGetDataFromServer() {
+            fetch("https://jsonplaceholder.typicode.com/users").then(function(res){
+            //    console.log(res.json())
+               return res.json() // promise {actualdata}
+            }).then(function(res){
+                  console.log(res)
+               var table=document.createElement('table')
+               var tr = document.createElement('tr')
+               var th1 = document.createElement('th')
+               var th2 = document.createElement('th')
+               var th3 = document.createElement('th')
+               var th4 = document.createElement('th')
+
+               th1.append("ID")
+               th2.append("NAME")
+               th3.append("EMAIL")
+               th4.append("CITY")
+
+                 tr.appendChild(th1)
+                 tr.appendChild(th2)
+                 tr.appendChild(th3)
+                 tr.appendChild(th4)
+
+                 table.appendChild(tr)
+
+                     res.map(function(element){
+                       
+                        var tr = document.createElement('tr')  
+                        var td1 = document.createElement('td')
+                        var td2 = document.createElement('td')
+                        var td3 = document.createElement('td')
+                        var td4 = document.createElement('td')
+
+                        td1.append(element.id)
+                        td2.append(element.name)
+                        td3.append(element.email)
+                        td4.append(element.address.city)
+
+                         tr.appendChild(td1)
+                         tr.appendChild(td2)
+                         tr.appendChild(td3)
+                         tr.appendChild(td4)
+
+                         table.appendChild(tr)
+                         
+                     })
+
+
+                 table.setAttribute('border','2')
+               
+                 document.querySelector('body').appendChild(table)
+
+            })
+
+        }
+    </script>
+</head>
+<body>
+       <div id="d">
+           <h2>Fetch Method Example</h2>
+           <button onclick="fnGetDataFromServer()">Send Request to Server</button>
+       </div>
+
+</body>
+</html>

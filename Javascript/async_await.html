@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    async function fn() {
+    var res=   await fetch("https://jsonplaceholder.typicode.com/users");
+     var data   = await res.json()
+     console.log(data)
+   
+   
+   }
+
+ 
+    </script>
+</head>
+<body>
+       <button onclick="fn()">Send</button>
+</body>
+</html>

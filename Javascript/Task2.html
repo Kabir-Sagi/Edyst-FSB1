@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    
+    <title>Switch</title>
+    <script>
+        function status(event) {
+          
+           console.log(event)
+            switch(event.target.innerText) {
+                case 'Good Morning':
+                   document.querySelector('h4').innerText = "Good Morning Sagar"  
+                   document.querySelector('h4').style.color = "red"
+                   break; 
+                   case 'Good Evening':
+                   document.querySelector('h4').innerText = "Good Evening Sagar" 
+                   document.querySelector('h4').style.color = "green"  
+                   break; 
+                   case 'Good Night':
+                   document.querySelector('h4').innerText = "Good Night Sagar"
+                   document.querySelector('h4').style.color = "blue"   
+                   break; 
+            }
+        }
+    </script>
+</head>
+<body>
+      <div style="text-align: center;margin-top: 100px;">
+        <h2>Switch Related Task</h2>
+           <h4>No Information</h4>
+          <button onclick="status(event)">Good Morning</button>
+          <button onclick="status(event)">Good Evening</button>
+          <button onclick="status(event)">Good Night</button>
+      </div>
+</body>
+</html>

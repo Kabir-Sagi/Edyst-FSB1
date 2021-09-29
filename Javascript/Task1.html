@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        function fn() {
+             var inputRef= document.getElementById('p')
+             var btnRef = document.getElementById('btn')
+               alert(inputRef.id)
+               if(inputRef.type === 'password') {
+                   inputRef.type = "text"
+                   btnRef.innerText = "Hide Password"
+               } else {
+                inputRef.type = "password"
+                   btnRef.innerText = "Show Password"
+               }
+
+        }
+    </script>
+</head>
+<body>
+       <div style="text-align:center;margin-top: 100px;">
+           <h2>Show/Hide Password Task</h2>
+         
+           Password:<input type="password" id="p" />
+           <button id="btn" onclick="fn()">Show Password</button>
+       </div>
+</body>
+</html>
